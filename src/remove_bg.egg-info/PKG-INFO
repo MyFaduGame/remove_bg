@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: remove_bg
+Version: 1.0.0
+Summary: Remove Background with Python
+Home-page: https://www.github.com/MyFaduGame/remove_bg
+Author: MyFaduGame
+Author-email: navinsharma9376319931@gmail.com
+Project-URL: Bug Tracker, https://www.github.com/MyFaduGame/remove_bg
+Keywords: remove,background,u2net,MyFaduGame,myfadugame,Navin
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pillow
+Requires-Dist: rembg
+
+# How to use the remove function
+
+## Load the Image
+```python
+from remove_bg import remove_byte,remove_direct,remove_cv2,remove_path
+
+input_path = "path/to/input"
+output_path = "path/to/output"
+```
+## Removing the background
+
+### With Byte Architecture
+```python
+success = remove_byte(input_path:str,output_path:str)
+print(success)
+```
+
+### With direct
+```python
+success = remove_direct(input_path:str,output_path:str)
+print(success)
+```
+
+### With cv2
+```python
+success = remove_cv2(input_path:str,output_path:str)
+print(success)
+```
+
+### With path
+```python
+success = remove_path(input_path:str,output_path:str)
+print(success)
+```
+
+
+## Authors
+
+- [@MyFaduGame](https://www.github.com/myfadugame)
+
